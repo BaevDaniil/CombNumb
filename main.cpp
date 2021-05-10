@@ -171,6 +171,8 @@ int main(void) {
                 std::cout << "Out of range argument" << std::endl;
             }
             break;
+          default:
+            std::cout << "Unknown opertion, enter H to learn more" << std::endl;
         }
       }
     }
