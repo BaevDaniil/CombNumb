@@ -3,6 +3,11 @@
 
 unsigned int U(unsigned int m, unsigned int n, bool& error) {
   unsigned int result = 1;
+  
+  if (m == 1)
+    error = false;
+    return 1;
+
   for (unsigned int i = 0; i < n; i++) {
     if (_UI32_MAX / m < result) {
       error = true;
